@@ -1,0 +1,1 @@
+Bypass the login with: `user=admin'--` and any password. This closes the string and comments out the rest of the query.

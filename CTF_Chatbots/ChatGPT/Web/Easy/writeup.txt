@@ -1,0 +1,1 @@
+View the page source in a browser (right-click > View Source). Inside the HTML comments is a clue or even the actual password. Use it to log in and get the flag.

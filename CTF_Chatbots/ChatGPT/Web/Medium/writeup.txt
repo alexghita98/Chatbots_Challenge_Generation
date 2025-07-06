@@ -1,0 +1,1 @@
+Visit the /set endpoint to receive a cookie. Then, using browser dev tools or an intercepting proxy like Burp, change the 'role' cookie from 'guest' to 'admin' and revisit the home page to retrieve the flag.
