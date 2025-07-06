@@ -1,0 +1,1 @@
+You intercepted a message that looks like gibberish—but it might just be hiding in plain sight. The encryption is old-school, but effective against the untrained eye. Can you crack the code and find the flag?

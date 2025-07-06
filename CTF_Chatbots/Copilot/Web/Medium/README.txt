@@ -1,0 +1,1 @@
+You’ve stumbled upon a website with a login system that uses cookies to determine user roles. But something feels... off. Can you manipulate the system and convince it you’re an admin?

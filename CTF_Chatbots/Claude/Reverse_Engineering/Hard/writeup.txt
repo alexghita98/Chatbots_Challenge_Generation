@@ -1,0 +1,39 @@
+strings mystery_binary
+
+# Look for base64-like strings
+strings mystery_binary | grep -E '^[A-Za-z0-9+/]+=*$'
+
+# Filter for potential flag parts
+strings mystery_binary | grep -E '^[A-Za-z0-9+/]{8}$'
+Expected Output:
+Binary Analysis Challenge
+========================
+License verified.
+Analysis Status: Complete
+Result: %s
+RkxBR3ti
+aW5hcnlf
+YW5hbHlz
+aXNfY29t
+cGxldGV9
+DEMO_LICENSE_KEY_12345
+FLAG{this_is_not_the_real_flag}
+
+# Method 1: Direct concatenation and decode
+echo "RkxBR3tiaW5hcnlfYW5hbHlzaXNfY29tcGxldGV9" | base64 -d
+
+# Method 2: Step by step
+echo "RkxBR3ti" | base64 -d  # FLAG{bi
+echo "aW5hcnlf" | base64 -d  # nary_
+echo "YW5hbHlz" | base64 -d  # analys
+echo "aXNfY29t" | base64 -d  # is_com
+echo "cGxldGV9" | base64 -d  # plete}
+
+# Method 3: Python script
+python3 -c "
+import base64
+parts = ['RkxBR3ti', 'aW5hcnlf', 'YW5hbHlz', 'aXNfY29t', 'cGxldGV9']
+full_encoded = ''.join(parts)
+flag = base64.b64decode(full_encoded).decode()
+print(f'Flag: {flag}')
+"

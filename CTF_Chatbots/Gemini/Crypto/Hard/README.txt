@@ -1,0 +1,1 @@
+You've found a binary file that appears to be encrypted. Intelligence suggests it's been XORed with a single-byte key repeated across the entire message. Your challenge is to discover this key, decrypt the file, and extract the hidden flag.

@@ -1,0 +1,5 @@
+Recognize the Base64 encoding pattern
+Decode the string multiple times:
+
+First decode: Rmxhc3t0dWx0aXBsZV9lbmNvZGluZ19sYXllcnN9
+Second decode: FLAG{multiple_encoding_layers}

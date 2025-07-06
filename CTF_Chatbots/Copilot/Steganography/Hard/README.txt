@@ -1,0 +1,1 @@
+You’ve found a JPEG image that looks completely ordinary. But something tells you it’s not just a pretty picture. Can you uncover the hidden flag buried in the file’s metadata?

@@ -1,0 +1,1 @@
+flag{jpg_has_extra_bits}

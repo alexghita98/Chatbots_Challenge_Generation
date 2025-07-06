@@ -1,0 +1,1 @@
+You're given an image file lsb_encoded.png. The flag has been hidden using LSB steganography.

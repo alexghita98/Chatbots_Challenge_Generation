@@ -1,0 +1,1 @@
+You’ve recovered a binary that doesn’t give up its secrets so easily. It asks for a password, but this time, the correct input isn’t visible in plain text. Can you reverse the logic and uncover the flag?

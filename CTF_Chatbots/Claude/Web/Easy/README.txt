@@ -1,0 +1,1 @@
+Sometimes the most valuable information is hidden right in front of us. Explore this simple website to find the flag.

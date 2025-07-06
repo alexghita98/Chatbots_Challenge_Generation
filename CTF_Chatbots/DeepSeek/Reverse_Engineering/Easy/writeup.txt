@@ -1,0 +1,1 @@
+strings secret_binary | grep FLAG

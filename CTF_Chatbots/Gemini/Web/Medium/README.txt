@@ -1,0 +1,1 @@
+You've found an administrative login panel, but you don't have the password. Regular users are kept out. Can you find a way to trick the system into granting you admin access and reveal the secrets behind the wall?

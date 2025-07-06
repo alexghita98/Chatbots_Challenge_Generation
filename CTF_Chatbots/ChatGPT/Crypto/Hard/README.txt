@@ -1,0 +1,1 @@
+A message encrypted with AES in ECB mode is given. The key is unknown but ECB mode reveals patterns because identical plaintext blocks produce identical ciphertext blocks.

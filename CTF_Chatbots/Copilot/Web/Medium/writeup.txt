@@ -1,0 +1,11 @@
+The app sets a cookie named role to either user or admin based on the login input.
+
+There’s no server-side validation of the cookie value.
+
+Students can:
+
+Log in as any user (e.g., bob)
+
+Use browser dev tools or a proxy (like Burp Suite) to change the cookie role=user → role=admin
+
+Refresh /admin and access the flag

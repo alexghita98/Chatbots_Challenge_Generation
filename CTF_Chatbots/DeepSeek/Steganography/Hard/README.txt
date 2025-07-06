@@ -1,0 +1,1 @@
+Extract a hidden message embedded in the frequency domain of an audio file using spectrogram analysis and phase encoding.

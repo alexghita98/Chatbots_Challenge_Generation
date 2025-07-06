@@ -1,0 +1,4 @@
+Recognize this as a Caesar cipher (shift cipher)
+Try different shift values (1-25)
+Shift value of 13 (ROT13) reveals the flag
+Can use online tools or write a simple script to decode

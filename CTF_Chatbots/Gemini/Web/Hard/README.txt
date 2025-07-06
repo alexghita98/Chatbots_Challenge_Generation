@@ -1,0 +1,1 @@
+This system allows you to view employee reports by their ID. While you can only see links to a few public reports, there's a highly confidential 'CEO Report' that's not listed. Your mission is to find and access this hidden report using an Insecure Direct Object Reference vulnerability. Can you enumerate your way to the top?

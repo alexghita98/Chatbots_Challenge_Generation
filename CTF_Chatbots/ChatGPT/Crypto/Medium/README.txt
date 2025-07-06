@@ -1,0 +1,1 @@
+An RSA encrypted message is provided with a small public key. The primes are small and can be factored easily. Your goal is to factor the modulus and decrypt the message.

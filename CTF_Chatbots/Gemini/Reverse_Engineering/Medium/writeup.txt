@@ -1,0 +1,51 @@
+Initial Execution:
+
+Run the executable: ./obfuscated_check. It prompts for a password.
+
+Try a random password (e.g., test). It prints "Access Denied!".
+
+Static Analysis with strings (Initial Check):
+
+Run strings obfuscated_check. You'll find the "Access Granted!", "Access Denied!", and "Enter the password:" strings.
+
+Crucially, you'll also find the flag string flag{xor_is_not_encryption}. This is a common shortcut in CTFs for medium-level challenges where the main focus is on understanding the check, not on hiding the flag from strings. If the flag were also obfuscated, it would be a harder challenge.
+
+However, the core of this challenge is to understand why the password check passes, even if the flag itself is exposed.
+
+Disassembly/Decompilation (Ghidra/IDA Pro/objdump):
+
+The hint is that it's "not a simple comparison" and involves "obfuscation." This suggests looking at the assembly code.
+
+Using Ghidra (Recommended):
+
+Open Ghidra and create a new project.
+
+Import obfuscated_check.
+
+Analyze the binary (default options are usually fine).
+
+Navigate to the main function in the Symbol Tree.
+
+Look for the call to check_password (Ghidra's decompiler will likely show it).
+
+Examine the decompiled check_password function.
+
+What to look for in check_password:
+
+You'll see a loop iterating through the input password.
+
+Inside the loop, you'll observe an XOR operation (^ in C, xor in assembly).
+
+You'll see a comparison between the XORed input character and a hardcoded array of bytes (expected_obfuscated).
+
+Identify the XOR key (the constant value being XORed with each byte). In the decompiled code, this will often be a constant used in the XOR instruction (e.g., 0x42 or 66 decimal).
+
+Identify the array of obfuscated bytes (e.g., {0x23, 0x27, 0x34, 0x27, 0x30, 0x31, 0x27, 0x2f, 0x27, 0x00}).
+
+Reversing the XOR:
+
+Once you have the expected_obfuscated bytes and the xor_key (0x42 in this case), you can reverse the operation.
+
+For each byte B in expected_obfuscated, compute P = B ^ xor_key.
+
+(see derive.py)

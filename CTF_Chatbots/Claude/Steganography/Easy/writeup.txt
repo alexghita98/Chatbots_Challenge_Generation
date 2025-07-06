@@ -1,0 +1,4 @@
+Use exiftool or similar metadata viewer
+Check the image metadata/EXIF data
+Find the flag hidden in the "Comment" field
+Command: exiftool image.png or use online EXIF viewers

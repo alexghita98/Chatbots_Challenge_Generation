@@ -1,0 +1,1 @@
+You've been given a seemingly ordinary image file, but this isn't about pixels or simple metadata. This file might contain an entire hidden filesystem, or a partition of data, appended or embedded within it, making it much larger than it appears. Your challenge is to unearth this hidden structure and extract its contents to find the flag.

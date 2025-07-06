@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Member Login</title>
+</head>
+<body>
+    <h1>Member Portal</h1>
+    <p>You are logged in as a regular user.</p>
+    <p><a href="admin.php">Admin Panel</a></p>
+    <script>
+        document.cookie = "user_role=user; path=/";
+        document.cookie = "session_id=abc123; path=/";
+    </script>
+</body>
+</html>

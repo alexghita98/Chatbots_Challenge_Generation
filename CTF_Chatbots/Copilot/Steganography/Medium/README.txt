@@ -1,0 +1,1 @@
+You’ve intercepted a strange audio file. It sounds like static, but something about it feels... encoded. Maybe there’s a message hidden in the noise? Can you extract the flag from the sound?

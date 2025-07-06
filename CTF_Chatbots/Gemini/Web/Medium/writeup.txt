@@ -1,0 +1,25 @@
+Access the application: Navigate to http://localhost:8081 (or your assigned URL). You'll be presented with a simple welcome page; click "Go to Login."
+
+Attempt to login: On the login page, try logging in with Username: admin and Password: admin. This is a common weak credential often used for default accounts, and this system accepts it for initial access.
+
+Observe "Access Denied!": After successfully logging in, you'll be redirected to admin.php. However, you'll be greeted with an "Access Denied!" message, indicating you don't have administrative privileges despite being logged in. Notice the crucial hint on the page: "(Hint: Check your cookies!)".
+
+Use Browser Developer Tools:
+
+Open your browser's Developer Tools (usually by pressing F12 or Ctrl+Shift+I / Cmd+Option+I).
+
+Go to the "Application" tab (in Chrome/Edge) or "Storage" tab (in Firefox).
+
+Under "Cookies" (for your domain, e.g., localhost), you will see a cookie named admin_status with the value false.
+
+Modify the Cookie:
+
+Double-click the value false for the admin_status cookie.
+
+Change the value to true.
+
+Press Enter to save the change.
+
+Refresh the page: With the admin_status cookie now set to true, simply refresh the admin.php page (or re-enter http://localhost:8081/admin.php in your address bar and press Enter). The server will now see your modified admin_status=true cookie and grant you access to the true admin panel.
+
+Retrieve the flag: The admin panel will now display, revealing the flag: flag{insecure_authentication_is_bad}.

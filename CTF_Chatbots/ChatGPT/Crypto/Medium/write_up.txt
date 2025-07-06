@@ -1,0 +1,9 @@
+Factor the modulus n into p and q (small primes).
+
+Compute phi = (p-1)(q-1).
+
+Calculate the private exponent d such that d*e ≡ 1 (mod phi).
+
+Decrypt ciphertext c by m = c^d mod n.
+
+Convert m back to bytes to get the plaintext flag.

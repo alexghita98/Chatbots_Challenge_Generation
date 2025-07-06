@@ -1,0 +1,1 @@
+You've been handed an image file, but the sender was a bit careless. Sometimes, files carry hidden information about themselves, not just within their pixels. Your task is to investigate the file's properties and structure to find the flag that wasn't meant for public eyes.

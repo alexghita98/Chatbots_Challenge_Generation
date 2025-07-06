@@ -1,0 +1,1 @@
+Reverse engineer a binary that checks a password and reveals the flag when the correct input is provided.

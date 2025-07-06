@@ -1,0 +1,1 @@
+You’ve found a mysterious binary. It asks for a password, but you don’t know what it is. Can you figure out what it’s checking for and reveal the flag?

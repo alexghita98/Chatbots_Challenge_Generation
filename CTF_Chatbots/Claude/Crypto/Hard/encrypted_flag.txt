@@ -1,0 +1,3 @@
+n = 143
+e = 7
+ciphertext = 26

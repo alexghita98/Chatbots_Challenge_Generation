@@ -1,0 +1,9 @@
+Load the binary in Ghidra or IDA Free.
+
+Identify the XOR key and the obfuscated target array.
+
+Reverse the XOR operation to recover the correct input.
+
+Extract and decrypt the flag using the same XOR key.
+
+(Again, the challenge is not trully usable, as the precomputed values by Copilot do not lead to something human-readable)

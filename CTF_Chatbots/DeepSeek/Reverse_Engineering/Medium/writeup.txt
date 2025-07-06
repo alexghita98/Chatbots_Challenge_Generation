@@ -1,0 +1,30 @@
+Step 1: Initial Analysis
+bash
+file crackme_medium        # Check file type
+strings crackme_medium    # Look for interesting strings
+(this also yields the FLAG :D)
+
+
+Step 2: Dynamic Analysis with GDB
+bash
+gdb ./crackme_medium
+(gdb) disassemble transform
+(gdb) disassemble main
+
+Step 3: Identify Key Components
+Password Transformation:
+
+Each character is XORed with 0x55
+
+The transformed input should equal "l3t_m3_1n"
+
+Reverse the Transformation:
+
+python
+target = "l3t_m3_1n"
+password = ''.join([chr(ord(c) ^ 0x55) for c in target])
+print(password)  # Output: 'P4SSW0RD'
+
+Step 4: Solve the Challenge
+bash
+./crackme_medium "P4SSW0RD"

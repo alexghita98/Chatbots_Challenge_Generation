@@ -1,0 +1,70 @@
+Initial Execution and Understanding Usage:
+
+Run the executable without arguments: ./license_crackme. It shows the usage: Usage: ./license_crackme <LICENSE_KEY>.
+
+Try with a random key: ./license_crackme ABC-123-DEF. It prints "Invalid license key."
+
+Static Analysis (strings):
+
+Run strings license_crackme. You'll likely find "Usage:", "Validating license key:", "Invalid license key.", and the flag flag{reversing_is_an_art}.
+
+You might also find the secret string super_secret_payload_for_checksum. This makes the challenge significantly easier. For a true "hard" challenge, this string might also be obfuscated. For this example, let's assume it's visible.
+
+Disassembly/Decompilation (Ghidra/IDA Pro):
+
+The core of this challenge is understanding the validate_license function.
+
+Using Ghidra (Recommended):
+
+Import license_crackme into Ghidra and analyze it.
+
+Navigate to the main function, then follow the call to validate_license.
+
+Examine the decompiled validate_license function carefully.
+
+What to look for:
+
+Key Parsing: Observe how the input key is parsed, specifically using strchr and null-termination, indicating a format like PART0-PART1-PART2. Identify which parts are extracted.
+
+part1_str validation: Look for atoi calls converting part1_str to an integer. Then, find the arithmetic operations that calculate expected_part1. You'll see strlen(key_copy) (specifically, the length of the first part of the key, before the first dash) being multiplied and added to a constant (e.g., * 7 + 1337).
+
+part2_str validation (Checksum): Look for strtoul converting part2_str (expected to be hexadecimal) to an unsigned integer. This is compared against expected_checksum.
+
+calculate_checksum function: Analyze this function. It takes a string (secret_data) and performs a specific calculation (an FNV-like hash). Identify the secret_data string (which you might find via strings or by inspecting the calls to calculate_checksum). Identify the initial seed (0xABCDEF01) and the prime multiplier (0x1000193).
+
+Deriving the License Key Logic:
+
+Part 0 (Prefix): This is the part before the first dash. It doesn't seem to be explicitly checked for a value, but its length is used for Part1. Let's choose a simple prefix like CRACKME. Its length is 7.
+
+Part 1 Calculation:
+
+Based on the decompiled code: expected_part1 = strlen("CRACKME") * 7 + 1337
+
+expected_part1 = 7 * 7 + 1337 = 49 + 1337 = 1386
+
+Part 2 Calculation (Checksum):
+
+The calculate_checksum function computes the checksum of secret_data = "super_secret_payload_for_checksum".
+
+Re-implement this function in Python (or use a debugger to get the expected_checksum value directly from memory after the program calculates it).
+
+(see calculate_checksum.py)
+
+Let's say the calculated checksum is 0x6191b92d.
+
+Construct the License Key:
+
+Format: PART0-PART1-PART2
+
+PART0: CRACKME
+
+PART1: 1386 (decimal)
+
+PART2: 6191b92d (hexadecimal string representation of the checksum)
+
+Combined Key: CRACKME-1386-6191b92d
+
+Validate the Key:
+
+Run the executable with the generated key
+

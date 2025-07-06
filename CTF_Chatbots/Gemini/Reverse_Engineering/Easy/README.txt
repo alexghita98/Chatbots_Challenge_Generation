@@ -1,0 +1,1 @@
+You've found a mysterious executable. It doesn't seem to do much when you run it, but a wise hacker knows that even silent programs can hide secrets. Your mission is to inspect this binary and find a hidden, readable string – your flag!

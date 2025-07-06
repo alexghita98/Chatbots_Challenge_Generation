@@ -1,0 +1,2 @@
+exiftool challenge_metadata.jpg
+exiftool will dump all detectable metadata. You'll need to scroll through the output, looking for unusual or suspicious entries. The flag will likely be in a field like UserComment, XPComment, XPKeywords, Artist, Copyright, etc.

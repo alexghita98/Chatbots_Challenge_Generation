@@ -1,0 +1,2 @@
+# Add metadata to image
+exiftool -Comment="FLAG{hidden_in_metadata}" image.png

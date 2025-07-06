@@ -1,0 +1,4 @@
+Read the source code to understand the password checking logic
+Find the hardcoded password in the code
+Run the program with the correct password
+The password is "secret123"

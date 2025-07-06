@@ -1,0 +1,5 @@
+Visit http://localhost:5000
+
+Try common admin paths like /admin
+
+Flag is displayed at /admin

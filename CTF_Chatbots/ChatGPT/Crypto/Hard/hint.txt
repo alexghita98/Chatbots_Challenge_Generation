@@ -1,0 +1,3 @@
+This ciphertext was encrypted with AES in ECB mode using a 16-byte key.
+Look for repeated patterns in the ciphertext to identify ECB weaknesses.
+Block size is 16 bytes.

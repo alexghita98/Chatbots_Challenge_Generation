@@ -1,0 +1,1 @@
+You find a mysterious file named encrypted.bin. Intelligence suggests it was encrypted using a single-byte XOR cipher.

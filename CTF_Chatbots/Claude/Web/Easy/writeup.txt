@@ -1,0 +1,3 @@
+Right-click on the webpage and select "View Page Source"
+Look through the HTML comments to find the flag
+The flag is located in a comment: <!-- FLAG{view_source_is_your_friend} -->

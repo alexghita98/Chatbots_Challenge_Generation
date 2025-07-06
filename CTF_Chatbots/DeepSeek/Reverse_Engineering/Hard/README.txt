@@ -1,0 +1,1 @@
+Analyze a packed binary that uses UPX with custom modifications and anti-debugging techniques to reveal the hidden flag.

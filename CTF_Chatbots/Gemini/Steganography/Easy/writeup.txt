@@ -1,0 +1,4 @@
+zsteg challenge_image.png
+
+java -jar Stegsolve.jar -> open challenge_image.png
+

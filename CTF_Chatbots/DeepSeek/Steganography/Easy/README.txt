@@ -1,0 +1,1 @@
+Find the flag hidden in a PNG image file using basic steganography techniques.

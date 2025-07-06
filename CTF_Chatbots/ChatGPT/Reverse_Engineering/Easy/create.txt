@@ -1,0 +1,2 @@
+gcc -o just_print_it easy.c -static
+strip just_print_it  # optional to remove symbols

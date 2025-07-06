@@ -1,0 +1,1 @@
+strings just_print_it | grep flag

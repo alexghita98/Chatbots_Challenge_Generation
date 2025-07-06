@@ -1,0 +1,1 @@
+You've been given an image that looks perfectly normal at first glance. However, secrets can often be hidden in plain sight. Investigate this image closely, especially its pixel data, to uncover a hidden message. It's often the simplest methods that hide the most!

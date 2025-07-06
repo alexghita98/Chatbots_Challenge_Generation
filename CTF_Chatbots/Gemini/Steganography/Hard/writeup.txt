@@ -1,0 +1,1 @@
+binwalk -e challenge_polyglot.jpg

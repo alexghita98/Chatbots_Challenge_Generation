@@ -1,0 +1,1 @@
+Welcome to your first web challenge! You’ve discovered a login page for a mysterious admin panel. Your goal is to log in as the admin—but you don’t have any credentials. Can you figure out how to bypass the login logic and retrieve the flag?

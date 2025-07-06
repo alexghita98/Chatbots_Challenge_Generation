@@ -1,0 +1,5 @@
+Open the website and notice they're logged in as a regular user
+Open browser developer tools (F12) → Application/Storage → Cookies
+Find the user_role cookie set to user
+Modify the cookie value from user to admin
+Refresh the page to access the admin panel and retrieve the flag

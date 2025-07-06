@@ -1,0 +1,1 @@
+You've found a peculiar string of characters. It looks like a jumble of letters, numbers, and symbols, often ending with one or two equals signs. This isn't random noise; it's a common encoding. Your task is to decode it and find the flag.

@@ -1,0 +1,1 @@
+This program checks for a password. Can you find the correct password without knowing it?

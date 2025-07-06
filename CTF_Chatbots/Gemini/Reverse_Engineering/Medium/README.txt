@@ -1,0 +1,1 @@
+This program asks for a password, but it's not a simple comparison. The developers tried to make it tricky. Your goal is to reverse engineer the binary to understand how it checks the password and then provide the correct input to unlock the secret flag!
